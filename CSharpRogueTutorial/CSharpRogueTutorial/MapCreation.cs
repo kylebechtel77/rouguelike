@@ -5,17 +5,19 @@ namespace CSharpRogueTutorial
 {
     class MapCreation
     {
-        public static void MakeMap()
+        public static Map MakeMap()
         {
-            Rogue.map = new Map(Constants.MapWidth, Constants.MapHeight);
+            Map map = new Map(Constants.MapWidth, Constants.MapHeight);
 
-            foreach (Cell cell in Rogue.map.GetAllCells())
+            foreach (Cell cell in map.GetAllCells())
             {
-                Rogue.map.SetCellProperties(cell.X, cell.Y, true, true);
+                map.SetCellProperties(cell.X, cell.Y, true, true);
             }
 
-            Rogue.map.SetCellProperties(30, 22, false, false);
-            Rogue.map.SetCellProperties(50, 22, false, false);
+            map.SetCellProperties(30, 22, false, false);
+            map.SetCellProperties(50, 22, false, false);
+
+            return map;
         }
     }
 }

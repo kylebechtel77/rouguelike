@@ -9,7 +9,7 @@ namespace RogueTutorial
     {
         public static GameObject player;
         public static List<GameObject> objects;
-        public static IMap map;
+        public static Map map;
 
         private static void Initialize()
         {
@@ -21,7 +21,7 @@ namespace RogueTutorial
             player = new GameObject('@', "red", 0, 0);
             objects.Add(player);
 
-            MapCreation.MakeMap();
+            map = MapCreation.MakeMap();
         }
 
         private static void MainLoop()
