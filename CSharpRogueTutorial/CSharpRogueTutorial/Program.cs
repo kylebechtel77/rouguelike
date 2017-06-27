@@ -1,28 +1,44 @@
-﻿using System;
+﻿using CSharpRogueTutorial;
+using RogueSharp;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Terminal = BearLib.Terminal;
+using BearLib;
 
 namespace RogueTutorial
 {
-    class Program
+    class Rogue
     {
+        public static GameObject player;
+        public static List<GameObject> objects;
+        public static IMap map;
+
         private static void Initialize()
         {
             Terminal.Open();
-            Terminal.Set("window: size=80x30; font: VeraMono.ttf, size=12");
+            Terminal.Set("window: size=" + Constants.ScreenWidth.ToString() + "x" + Constants.ScreenHeight.ToString() + "; font: VeraMono.ttf, size=12");
+
+            objects = new List<GameObject>();
+
+            player = new GameObject('@', "red", 0, 0);
+            objects.Add(player);
+
+            MapCreation.MakeMap();
         }
 
         private static void MainLoop()
         {
             while (true)
             {
-                Terminal.Clear();
-                Terminal.PutExt(0, 0, 0, 0, '@');
-                Terminal.Refresh();
+                Rendering.RenderAll();
+
+                bool exit = Controls.HandleKeys(player);
+
+                if (exit)
+                {
+                    break;
+                }
             }
+
+            Terminal.Close();
         }
 
         static void Main(string[] args)
