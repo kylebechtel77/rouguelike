@@ -1,4 +1,5 @@
 ﻿using BearLib;
+using RogueTutorial;
 using System.Linq;
 
 namespace CSharpRogueTutorial
@@ -12,25 +13,25 @@ namespace CSharpRogueTutorial
 
         public static int[] EscapeKeys = { Terminal.TK_ESCAPE };
 
-        public static bool HandleKeys(GameObject player)
+        public static bool HandleKeys()
         {
             int key = Terminal.Read();
 
             if (LeftMovement.Contains(key))
             {
-                player.Move(-1, 0);
+                Rogue.GameWorld.Player.Move(-1, 0);
             }
             else if (RightMovement.Contains(key))
             {
-                player.Move(1, 0);
+                Rogue.GameWorld.Player.Move(1, 0);
             }
             else if (UpMovement.Contains(key))
             {
-                player.Move(0, -1);
+                Rogue.GameWorld.Player.Move(0, -1);
             }
             else if (DownMovement.Contains(key))
             {
-                player.Move(0, 1);
+                Rogue.GameWorld.Player.Move(0, 1);
             }
 
             else if (EscapeKeys.Contains(key))

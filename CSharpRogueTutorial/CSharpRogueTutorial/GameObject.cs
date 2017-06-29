@@ -1,8 +1,10 @@
 ﻿using BearLib;
 using RogueTutorial;
+using System;
 
 namespace CSharpRogueTutorial
 {
+    [Serializable]
     class GameObject
     {
         public char tile;
@@ -27,7 +29,7 @@ namespace CSharpRogueTutorial
 
         internal void Move(int dx, int dy)
         {
-            if (Rogue.map.GetCell(x + dx, y + dy).IsWalkable)
+            if (Rogue.GameWorld.Map[x + dx, y + dy].blocked == false)
             {
                 x += dx;
                 y += dy;

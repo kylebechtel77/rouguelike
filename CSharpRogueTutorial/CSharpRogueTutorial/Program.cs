@@ -1,5 +1,4 @@
 ﻿using CSharpRogueTutorial;
-using RogueSharp;
 using System.Collections.Generic;
 using BearLib;
 
@@ -7,21 +6,24 @@ namespace RogueTutorial
 {
     class Rogue
     {
-        public static GameObject player;
-        public static List<GameObject> objects;
-        public static Map map;
+        public static World GameWorld;
 
         private static void Initialize()
         {
             Terminal.Open();
             Terminal.Set("window: size=" + Constants.ScreenWidth.ToString() + "x" + Constants.ScreenHeight.ToString() + "; font: VeraMono.ttf, size=12");
+        }
 
-            objects = new List<GameObject>();
+        private static void NewGame()
+        {
+            GameWorld = new World();
 
-            player = new GameObject('@', "red", 0, 0);
-            objects.Add(player);
+            GameWorld.Objects = new List<GameObject>();
 
-            map = MapCreation.MakeMap();
+            GameWorld.Player = new GameObject('@', "red", 0, 0);
+            GameWorld.Objects.Add(GameWorld.Player);
+
+            GameWorld.Map = MapCreation.MakeMaze();
         }
 
         private static void MainLoop()
@@ -30,7 +32,7 @@ namespace RogueTutorial
             {
                 Rendering.RenderAll();
 
-                bool exit = Controls.HandleKeys(player);
+                bool exit = Controls.HandleKeys();
 
                 if (exit)
                 {
@@ -44,6 +46,7 @@ namespace RogueTutorial
         static void Main(string[] args)
         {
             Initialize();
+            NewGame();
             MainLoop();
         }
     }
