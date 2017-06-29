@@ -130,9 +130,9 @@ namespace CSharpRogueTutorial
 
         private static void CreateRoom(Room room, ref Tile[,] map)
         {
-            for (int x = room.x1 + 1; x < room.x2; x++)
+            for (int x = room.startX + 1; x < room.endX; x++)
             {
-                for (int y = room.y1 + 1; y < room.y2; y++)
+                for (int y = room.startY + 1; y < room.endY; y++)
                 {
                     map[x, y].blocked = false;
                 }
