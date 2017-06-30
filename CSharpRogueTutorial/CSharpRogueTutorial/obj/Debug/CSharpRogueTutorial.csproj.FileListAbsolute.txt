@@ -1,0 +1,10 @@
+C:\Users\kbechtel\Documents\projects\roguelikedev-does-the-complete-roguelike-tutorial\CSharpRogueTutorial\CSharpRogueTutorial\bin\Debug\BearLibTerminal.dll
+C:\Users\kbechtel\Documents\projects\roguelikedev-does-the-complete-roguelike-tutorial\CSharpRogueTutorial\CSharpRogueTutorial\bin\Debug\VeraMono.ttf
+C:\Users\kbechtel\Documents\projects\roguelikedev-does-the-complete-roguelike-tutorial\CSharpRogueTutorial\CSharpRogueTutorial\bin\Debug\CSharpRogueTutorial.exe.config
+C:\Users\kbechtel\Documents\projects\roguelikedev-does-the-complete-roguelike-tutorial\CSharpRogueTutorial\CSharpRogueTutorial\bin\Debug\CSharpRogueTutorial.exe
+C:\Users\kbechtel\Documents\projects\roguelikedev-does-the-complete-roguelike-tutorial\CSharpRogueTutorial\CSharpRogueTutorial\bin\Debug\CSharpRogueTutorial.pdb
+C:\Users\kbechtel\Documents\projects\roguelikedev-does-the-complete-roguelike-tutorial\CSharpRogueTutorial\CSharpRogueTutorial\bin\Debug\RogueSharp.dll
+C:\Users\kbechtel\Documents\projects\roguelikedev-does-the-complete-roguelike-tutorial\CSharpRogueTutorial\CSharpRogueTutorial\bin\Debug\RogueSharp.xml
+C:\Users\kbechtel\Documents\projects\roguelikedev-does-the-complete-roguelike-tutorial\CSharpRogueTutorial\CSharpRogueTutorial\obj\Debug\CSharpRogueTutorial.csprojResolveAssemblyReference.cache
+C:\Users\kbechtel\Documents\projects\roguelikedev-does-the-complete-roguelike-tutorial\CSharpRogueTutorial\CSharpRogueTutorial\obj\Debug\CSharpRogueTutorial.exe
+C:\Users\kbechtel\Documents\projects\roguelikedev-does-the-complete-roguelike-tutorial\CSharpRogueTutorial\CSharpRogueTutorial\obj\Debug\CSharpRogueTutorial.pdb

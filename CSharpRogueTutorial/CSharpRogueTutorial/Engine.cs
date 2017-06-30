@@ -11,7 +11,7 @@ namespace RogueTutorial
         private static void Initialize()
         {
             Terminal.Open();
-            Terminal.Set("window: size=" + Constants.ScreenWidth.ToString() + "x" + Constants.ScreenHeight.ToString() + "; font: VeraMono.ttf, size=12");
+            Terminal.Set("window: size=" + Constants.ScreenWidth + "x" + Constants.ScreenHeight + "; font: VeraMono.ttf, size=12");
         }
 
         private static void NewGame()
@@ -32,7 +32,7 @@ namespace RogueTutorial
             {
                 Rendering.RenderAll();
 
-                bool exit = Controls.HandleKeys();
+                bool exit = InputHandlers.HandleKeys();
 
                 if (exit)
                 {

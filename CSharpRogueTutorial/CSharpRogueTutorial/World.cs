@@ -7,7 +7,7 @@ namespace CSharpRogueTutorial
     class World
     {
         public Tile[,] Map;
-        public GameObject Player;
+        public Player Player;
         public List<GameObject> Objects;
 
         public World()

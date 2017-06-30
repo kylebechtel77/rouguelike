@@ -4,12 +4,12 @@ using System.Linq;
 
 namespace CSharpRogueTutorial
 {
-    class Controls
+    class InputHandlers
     {
-        static int[] LeftMovement = { Terminal.TK_LEFT, Terminal.TK_KP_4, Terminal.TK_H };
-        static int[] RightMovement = { Terminal.TK_RIGHT, Terminal.TK_KP_6, Terminal.TK_L };
-        static int[] UpMovement = { Terminal.TK_UP, Terminal.TK_KP_8, Terminal.TK_K };
-        static int[] DownMovement = { Terminal.TK_DOWN, Terminal.TK_KP_2, Terminal.TK_J };
+        static int[] LeftMovement = { Terminal.TK_LEFT, Terminal.TK_KP_4 };
+        static int[] RightMovement = { Terminal.TK_RIGHT, Terminal.TK_KP_6 };
+        static int[] UpMovement = { Terminal.TK_UP, Terminal.TK_KP_8 };
+        static int[] DownMovement = { Terminal.TK_DOWN, Terminal.TK_KP_2 };
 
         public static int[] EscapeKeys = { Terminal.TK_ESCAPE };
 
