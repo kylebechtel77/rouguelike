@@ -49,7 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BearLibTerminal.cs" />
-    <Compile Include="PlayerStats.cs" />
+    <Compile Include="EntityStats.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="InputHandlers.cs" />
     <Compile Include="GameObject.cs" />
